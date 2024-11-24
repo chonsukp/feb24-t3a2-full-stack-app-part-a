@@ -26,17 +26,21 @@ Coder Academy - T3A2 - Full Stack Application - Part A
 ---
 
 ## R2 - Dataflow Diagram
-![Placeholder](diagrams/dataflow-diagram.png)
+Context:  
+
+![Context Dataflow](docs/digrams/dataflow-diagram-1.png)
 
 ---
 
 ## R3 - Application Architecture Diagram
-![Placeholder](diagrams/architecture-diagram.png)
+Detailed:  
+
+![Detailed Dataflow](diagrams/architecture-diagram.png)
 
 ---
 
 ## R4 - User Stories 
-### User Story 1: Maya, the Casual Viewer 
+### User Story 1: May (Casual Viewer) 
 
 #### Background:
 Maya loves relaxing with a good movie after a busy day at work, but she often gets overwhelmed by endless scrolling on streaming platforms. She enjoys experimenting with new genres but isn’t always sure where to start.
@@ -50,7 +54,7 @@ Maya loves relaxing with a good movie after a busy day at work, but she often ge
 - Decision fatigue from too many options on streaming platforms.
 - Lack of a simple way to discover movies that match her preferences.
 
-### User Story 2: Miles, the Movie Enthusiast
+### User Story 2: Miles (Movie Enthusiast)
 
 #### Background:
 Miles is a self-proclaimed movie buff who loves exploring connections between films. He often hosts movie nights with friends and enjoys finding thematic pairings that blend different styles or genres.
@@ -64,7 +68,7 @@ Miles is a self-proclaimed movie buff who loves exploring connections between fi
 - Spending hours researching movies to fit a specific theme for his movie nights.
 - Difficulty discovering obscure or underrated films in niche genres.
 
-### User Story 3: Mave, the Nostalgic Movie Lover 
+### User Story 3: Mave (Nostalgic Movie Lover) 
 
 #### Background:
 Mave enjoys revisiting movies that hold nostalgic value for him and exploring new films with similar vibes. He often wants to relive the excitement of classics like Jurassic Park or The Matrix but doesn’t know where to start finding complementary movies.
@@ -82,14 +86,14 @@ Frustration with generic recommendations that don’t align with the style or th
 ---
 
 ## R4 - User Stories - Refined 
-### User Story 1: Maya, the Casual Viewer 
+### User Story 1: Maya (Casual Viewer) 
 
 > "As a casual viewer, she wants to use a "pick for me" button to randomly generate a movie suggestion, So that she can quickly decide on a movie without spending too much time searching".
 
-### User Story 2: Miles, the Movie Enthusiast
+### User Story 2: Miles (Movie Enthusiast)
 > "As a movie enthusiast, I wants to combine two genres to get movie recommendations that match both, So that I can find unique movies that align with my diverse interests".
 
-### User Story 3: Mave, the Nostalgic Movie Lover
+### User Story 3: Mave (Nostalgic Movie Lover)
 > "As a nostalgic movie lover, I want to input specific movies I love to generate recommendations with similar themes or tones, So that I can relive the excitement of my favorite classics and discover new movies with a similar vibe".
 
 ---
@@ -108,7 +112,7 @@ Frustration with generic recommendations that don’t align with the style or th
 
 ## R6 - Planning Board Screenshots
 ### Initial Board
-![Placeholder](planning/board-initial.png)
+![Initial Board](docs/planning/trello-1.png)
 
 ### Mid-Project Update
 ![Placeholder](planning/board-mid.png)
