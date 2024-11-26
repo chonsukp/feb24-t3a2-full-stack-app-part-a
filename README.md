@@ -28,13 +28,15 @@ Coder Academy - T3A2 - Full Stack Application - Part A
 ## R2 - Dataflow Diagram
 Context Level 0 Diagram:
 
-The diagram below provides an high-level overview of the interaction within the MatchMyMovies app. It shows the user making requests (e.g., selecting genres, getting recommendations), which are processed by the app. The app then communicates with the movie API to retrieve relevant data, which is then displayed to the user. 
+The diagrams below shows the interaction within the MatchMyMovies app. The user starts by selecting genres or options, which are sent to the Frontend (React). The frontend then sends an HTTP request to the Backend (Node.js + Express). The backend processes the request by fetching the necessary data from the Movie API. Once the data is retrieved, the Movie API returns the movie information to the backend, which then responds to the frontend. The frontend displays the movie list to the user.
+
+If the user clicks on a movie to get more details, the Frontend sends a request to the Backend. The backend again interacts with the Movie API to fetch the movie details. The Movie API returns the details to the backend, which in turn sends the data back to the frontend for display to the user.
+
+In addition to handling user requests, the Backend also caches popular requests and stores analytics data in the Database (MongoDB). This helps improve the efficiency of the application by reducing redundant calls to the external movie API and providing data for analysis.
 
 ![Context Dataflow](docs/digrams/dataflow-diagram-0.png)  
 
 Detailed Level 1 Diagram:  
-
-This detailed diagram below breakdowns the MatchMyMovies app showing the internal processes and how data moves between the User, Frontend (React), Backend (Node.js + Express), Movie API, and Database (MongoDB). The user interacts with the frontend, which sends requests to the backend. The backend then fetches data from the movie API and responds to the frontend. The backend also caches popular requests and stores analytics in the database. 
 
 ![Context Dataflow](docs/digrams/dataflow-diagram-1.png)  
 
