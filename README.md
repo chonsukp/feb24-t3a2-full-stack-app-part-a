@@ -43,9 +43,46 @@ Detailed Level 1 Diagram:
 ---
 
 ## R3 - Application Architecture Diagram
-![Detailed Dataflow](diagrams/architecture-diagram.png)
 
----
+![Detailed Dataflow](docs/digrams/app-architecture-diagram.png)
+
+User Interaction with Frontend:
+
+1. The User starts by interacting with the React Frontend. This can include actions such as selecting movie genres, requesting recommendations, or clicking on a specific movie for more details. The Frontend is responsible for capturing user inputs and displaying the results returned from the backend.
+
+Frontend to Backend Communication:
+
+2. When the user initiates an action, the Frontend sends an HTTP request to the Backend, which is built using Node.js and Express. This request can include information such as the selected genre or movie that the user wants to explore.
+
+Backend to Mongoose:
+
+3. The Backend uses Mongoose, which is an Object Data Modeling (ODM) library for MongoDB. Mongoose acts as a bridge between the backend and the MongoDB database, allowing the backend to easily read, write, and validate data. For example, when a request comes in, the backend may need to check if data is already cached in MongoDB by interacting with Mongoose.
+
+Mongoose Interaction with MongoDB:
+
+4. Mongoose interacts directly with MongoDB to store or retrieve data. This can include storing cached movie data, user preferences, or analytics. Mongoose uses schemas to ensure that all data adheres to a defined structure, making interactions with MongoDB more consistent and reliable.
+
+Backend to External Movie API:
+
+5. If the requested data is not available in MongoDB, the Backend sends an HTTP request to an external Movie API. This is done to retrieve the most up-to-date movie information, such as details about a specific movie or a list of movies in a particular genre.
+
+External API Response:
+
+6. The External Movie API processes the request and returns the required movie data to the Backend. This data may include movie titles, ratings, summaries, cast information, etc.
+
+Backend Response to Frontend:
+
+7. The Backend processes the data received from the External API (or MongoDB, if the data was cached) and sends it back to the Frontend. The backend may also cache some of the fetched data in MongoDB using Mongoose to optimise future requests.
+
+Frontend Displays Data to User:
+
+8. The Frontend then takes the response from the backend and displays it to the User. This could be in the form of a list of movies, detailed movie information, or recommendations based on user input.
+
+User Preferences and Caching:
+
+9. When the user provides preferences, such as selecting favorite genres or movies, this information is sent to the Backend. The backend, in turn, interacts with Mongoose to store this information in MongoDB for future use. This helps in providing a personalised experience and reduces redundant API calls by caching popular requests.
+
+--- 
 
 ## R4 - User Stories 
 ### User Story 1: May (Casual Viewer) 
