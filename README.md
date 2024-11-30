@@ -20,7 +20,7 @@ Coder Academy - T3A2 - Full Stack Application - Part A
 - Frontend: React (Vite)
 - Backend: Node.js, Express.js
 - Database: MongoDB
-- API: ?
+- API: TMDb/OMDB
 - Other Tools: Figma for design, Trello for planning, Excalidraw for diagramming
 
 ---
@@ -135,13 +135,16 @@ Frustration with generic recommendations that don’t align with the style or th
 
 ## R5 - Wireframes
 ### Desktop
-![Placeholder](wireframes/desktop-wireframe.png)
+![Wireframe Desktop](docs/wireframes/wireframe-desktop.png)
+![Mockup Desktop](docs/wireframes/mockup-desktop.png)
 
 ### Tablet
-![Placeholder](wireframes/tablet-wireframe.png)
+![Tablet Wireframe](docs/wireframes/wireframe-tablet.png)
+![Tablet Mockup](docs/wireframes/mockup-tablet.png)
 
 ### Mobile
-![Placeholder](wireframes/mobile-wireframe.png)
+![Mobile Wireframe](docs/wireframes/wireframe-mobile.png) 
+![Mobile Mockup](docs/wireframes/mockup-mobile.png)
 
 ---
 
@@ -153,8 +156,9 @@ Frustration with generic recommendations that don’t align with the style or th
 ![Initial Board](docs/planning/trello-board-initial.png)
 
 ### Midway Board
-![Placeholder](docs/planning/trello-board-midway.png)
+![Midway Board 1](docs/planning/trello-board-midway-1.png)
+![Midway Board 2](docs/planning/trello-board-midway-2.png)
 
 ### Final Board
-![Placeholder](planning/board-final.png)
+![Final Board](docs/planning/trello-board-final.png)
 
